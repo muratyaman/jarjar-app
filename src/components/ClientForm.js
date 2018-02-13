@@ -7,9 +7,9 @@ class ClientForm extends Component {
 
   componentWillReceiveProps = (nextProps) => { // Receive Contact data Asynchronously
     const { client } = nextProps;
-    if(client.id !== this.props.client.id) { // Initialize form only once
+    //if(client.id !== this.props.client.id) { // Initialize form only once
       this.props.initialize(client)
-    }
+    //}
   }
 
   renderField = ({ input, label, type, meta: { touched, error } }) => (
